@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
         
-        let request = UNNotificationRequest(identifier: "TestIdentifier", content: content, trigger: trigger)
+        let request = UNNotificationRequest(identifier: "NotificationIdentifier", content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
 }

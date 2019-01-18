@@ -17,16 +17,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C12-72-ywY">
-                                <rect key="frame" x="164" y="324" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The notification will fire after 5 seconds of button click." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jhe-Ky-7uX">
+                                <rect key="frame" x="10" y="373.5" width="355" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C12-72-ywY">
+                                <rect key="frame" x="87.5" y="323.5" width="200" height="40"/>
+                                <color key="backgroundColor" red="0.42994586135347973" green="0.66666668653488159" blue="0.22519712529660452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="RlW-ky-8Xp"/>
+                                    <constraint firstAttribute="height" constant="40" id="uss-fo-Y9T"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Set Notification"/>
                                 <connections>
                                     <action selector="buttonCreateNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ytW-wd-Hw5"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jhe-Ky-7uX" secondAttribute="trailing" constant="10" id="AIB-ls-t3g"/>
+                            <constraint firstItem="C12-72-ywY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DlO-Iu-eCe"/>
+                            <constraint firstItem="Jhe-Ky-7uX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="ICd-OZ-cAs"/>
+                            <constraint firstItem="Jhe-Ky-7uX" firstAttribute="top" secondItem="C12-72-ywY" secondAttribute="bottom" constant="10" id="IYS-Uq-pQ4"/>
+                            <constraint firstItem="C12-72-ywY" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="WFZ-CK-8mf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
