@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // Remove all delivered notificatios
+        center.removeAllDeliveredNotifications()
     }
 
     @IBAction func buttonCreateNotification(_ sender: Any) {
@@ -41,9 +44,16 @@ class ViewController: UIViewController {
     @IBAction func buttonReadNotifications(_ sender: Any) {
         // Find list of Local Notification the app has already set
         center.getPendingNotificationRequests { (notifications) in
-            print("Count: \(notifications.count)")
+            print("Total Pending Notifications: \(notifications.count)")
             for item in notifications {
                 print("\(item.content.userInfo) \n")
+            }
+        }
+        
+        center.getDeliveredNotifications { (notifications) in
+            print("Total Delivered Notifications: \(notifications.count)")
+            for item in notifications {
+                print("\(item) \n")
             }
         }
     }
