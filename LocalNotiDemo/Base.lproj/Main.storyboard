@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C12-72-ywY">
-                                <rect key="frame" x="87.5" y="323.5" width="200" height="40"/>
+                                <rect key="frame" x="87" y="323.5" width="201" height="40"/>
                                 <color key="backgroundColor" red="0.42994586135347973" green="0.66666668653488159" blue="0.22519712529660452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="RlW-ky-8Xp"/>
@@ -36,20 +36,38 @@
                                     <action selector="buttonCreateNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ytW-wd-Hw5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZp-wj-9au">
+                                <rect key="frame" x="87" y="265" width="201" height="40"/>
+                                <color key="backgroundColor" red="0.42994586140000002" green="0.66666668650000005" blue="0.2251971253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Hye-Jp-PDy"/>
+                                    <constraint firstAttribute="height" constant="40" id="eX6-59-seE"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Read Notifications"/>
+                                <connections>
+                                    <action selector="buttonReadNotifications:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j8D-Ll-Wfo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jhe-Ky-7uX" secondAttribute="trailing" constant="10" id="AIB-ls-t3g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MZp-wj-9au" secondAttribute="trailing" constant="87" id="Bua-JH-79o"/>
                             <constraint firstItem="C12-72-ywY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DlO-Iu-eCe"/>
                             <constraint firstItem="Jhe-Ky-7uX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="ICd-OZ-cAs"/>
                             <constraint firstItem="Jhe-Ky-7uX" firstAttribute="top" secondItem="C12-72-ywY" secondAttribute="bottom" constant="10" id="IYS-Uq-pQ4"/>
+                            <constraint firstItem="MZp-wj-9au" firstAttribute="leading" secondItem="C12-72-ywY" secondAttribute="leading" id="QpI-Yg-8GF"/>
                             <constraint firstItem="C12-72-ywY" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="WFZ-CK-8mf"/>
+                            <constraint firstItem="MZp-wj-9au" firstAttribute="trailing" secondItem="C12-72-ywY" secondAttribute="trailing" id="dhX-Ap-Z7S"/>
+                            <constraint firstItem="C12-72-ywY" firstAttribute="top" secondItem="MZp-wj-9au" secondAttribute="bottom" constant="18.5" id="qIq-Dy-CiI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="88.605697151424295"/>
         </scene>
     </scenes>
 </document>
